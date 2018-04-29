@@ -1,1 +1,25 @@
-LIST:
+To do for Stylesheet:
+   -constant color scheme
+   -constant font
+   -headers, etc
+   -parameters for photos/banners
+   -box consistency
+
+To do for page 1:
+   -Global header
+   -UMD logo top left
+   -box of links on the left side
+   -Bootstrap for Carousel
+   -PHP for login
+   -Link to Twitter: https://twitter.com/infosciumd?lang=en
+
+To do for page 2:
+   -Global header
+   -Box for editable class info. (How to make a wiki?)
+   -footer(?)
+   -Prereq list: https://ischool.umd.edu/sites/default/files/files/Prerequisite_List_2017_03_13.docx.pdf (hardcoded)
+
+To do for page 3:
+   -Global header
+   -Hardcode prereqs
+   -Table with html

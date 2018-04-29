@@ -88,9 +88,29 @@
 <head>
   <title>WHATS GOOD</title>
 
-  <a class="twitter-timeline" href="https://twitter.com/InfoSciUMD?ref_src=twsrc%5Etfw">Tweets by InfoSciUMD</a>
-   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
+<div class="row">
+   <div class="col-md-4"></div>
+   <div class="container">
+      <div class="col-md-4">
+         <div class="panel panel-danger">
+            <div class="panel-heading">
+               <h3 class="panel-title"><i class="fa fa-twitter-square" aria-hidden="true"></i>
+                  Solodev Live
+               </h3>
+            </div>
+            <div class="panel-body">
+               <a href="https://twitter.com/intent/tweet?button_hashtag=InfoSciUMD&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #InfoSciUMD</a>
+               <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="col-md-4">
+   </div>
+</div>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 <!-- jQuery library -->
