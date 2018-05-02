@@ -14,6 +14,15 @@
          $('.message a').click(function(){
             $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
          });
+
+         function dark() {
+           if (document.body.style.backgroundColor == 'rgb(255, 255, 255)') {
+
+                   document.body.style.backgroundColor = '#333';
+           }
+           else {
+                   document.body.style.backgroundColor = 'rgb(255, 255, 255)';
+           }
       </script>
       <title>Editorial by HTML5 UP</title>
       <meta charset="utf-8" />
@@ -235,6 +244,11 @@
                      <li><a href="#">Amet Lacinia</a></li>
                   </ul>
                </nav>
+
+               <!-- dark mode button -->
+               <section>
+                <button onclick="dark()">Switch color</button>
+               </section>
                <!-- Section -->
                <section>
                   <header class="major">
