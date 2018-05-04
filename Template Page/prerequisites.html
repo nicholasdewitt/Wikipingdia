@@ -6,39 +6,45 @@
    -->
 <!-- jQuery library -->
 <html>
-   <head>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <!-- Latest compiled JavaScript -->
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-      <script>
-         $('.message a').click(function(){
-            $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
-         });
 
-         function dark() {
-           if (document.body.style.backgroundColor == 'rgb(255, 255, 255)') {
+<head>
+<title>Info Sci Prerequisites</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+<link rel="stylesheet" href="assets/css/main.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!--[if lte IE 9]>
+<link rel="stylesheet" href="assets/css/ie9.css" />
+<![endif]-->
+<!--[if lte IE 8]>
+<link rel="stylesheet" href="assets/css/ie8.css" />
+<![endif]-->
 
-                   document.body.style.backgroundColor = '#333';
-           }
-           else {
-                   document.body.style.backgroundColor = 'rgb(255, 255, 255)';
-           }
-      </script>
-      <title>Info Sci Prerequisites</title>
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-      <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-      <link rel="stylesheet" href="assets/css/main.css" />
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-      <!--[if lte IE 9]>
-      <link rel="stylesheet" href="assets/css/ie9.css" />
-      <![endif]-->
-      <!--[if lte IE 8]>
-      <link rel="stylesheet" href="assets/css/ie8.css" />
-      <![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+   $('.message a').click(function(){
+      $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+   });
 
-   </head>
-   <body>
+   function dark() {
+    if (document.body.style.backgroundColor == 'rgb(255, 255, 255)') {
+
+            document.body.style.backgroundColor = '#333';
+            document.getElementById("logo").style.filter = "invert(100%)";
+    }
+    else {
+            document.body.style.backgroundColor = 'rgb(255, 255, 255)';
+            document.getElementById("logo").style.filter = "invert(0%)";
+
+    }
+}
+</script>
+
+</head>
+   <body style="background-color: rgb(255, 255, 255)">
       <!-- Wrapper -->
       <div id="wrapper">
          <!-- Main -->
@@ -110,62 +116,6 @@
               
                </section>
 
-               <!-- Section -->
-               <section>
-                  <header class="major">
-                     <h2>Ipsum sed dolor</h2>
-                  </header>
-                  <div class="posts">
-                     <article>
-                        <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-                        <h3>Interdum aenean</h3>
-                        <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-                        <ul class="actions">
-                           <li><a href="#" class="button">More</a></li>
-                        </ul>
-                     </article>
-                     <article>
-                        <a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-                        <h3>Nulla amet dolore</h3>
-                        <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-                        <ul class="actions">
-                           <li><a href="#" class="button">More</a></li>
-                        </ul>
-                     </article>
-                     <article>
-                        <a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-                        <h3>Tempus ullamcorper</h3>
-                        <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-                        <ul class="actions">
-                           <li><a href="#" class="button">More</a></li>
-                        </ul>
-                     </article>
-                     <article>
-                        <a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
-                        <h3>Sed etiam facilis</h3>
-                        <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-                        <ul class="actions">
-                           <li><a href="#" class="button">More</a></li>
-                        </ul>
-                     </article>
-                     <article>
-                        <a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
-                        <h3>Feugiat lorem aenean</h3>
-                        <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-                        <ul class="actions">
-                           <li><a href="#" class="button">More</a></li>
-                        </ul>
-                     </article>
-                     <article>
-                        <a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
-                        <h3>Amet varius aliquam</h3>
-                        <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-                        <ul class="actions">
-                           <li><a href="#" class="button">More</a></li>
-                        </ul>
-                     </article>
-                  </div>
-               </section>
             </div>
          </div>
          <!-- Sidebar -->
@@ -179,7 +129,7 @@
                <!-- Login -->
                <section>
                   <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-
+                  <button onclick="dark()" style="width:auto;">Night Mode</button>
                   <div id="id01" class="modal">
                     
                     <form class="modal-content animate" action="/action_page.php">
