@@ -1,57 +1,51 @@
 <!DOCTYPE HTML>
-<!--
-   Editorial by HTML5 UP
-   html5up.net | @ajlkn
-   Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-   -->
 <!-- jQuery library -->
 <html>
+   <head>
+   <title>Dr. Strange</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+   <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+   <link rel="stylesheet" href="assets/css/main.css" />
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <!--[if lte IE 9]>
+   <link rel="stylesheet" href="assets/css/ie9.css" />
+   <![endif]-->
+   <!--[if lte IE 8]>
+   <link rel="stylesheet" href="assets/css/ie8.css" />
+   <![endif]-->
 
-<head>
-<title>Info Sci Prerequisites</title>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-<link rel="stylesheet" href="assets/css/main.css" />
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<!--[if lte IE 9]>
-<link rel="stylesheet" href="assets/css/ie9.css" />
-<![endif]-->
-<!--[if lte IE 8]>
-<link rel="stylesheet" href="assets/css/ie8.css" />
-<![endif]-->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <!-- Latest compiled JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script>
+      $('.message a').click(function(){
+         $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+      });
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script>
-   $('.message a').click(function(){
-      $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
-   });
+      function dark() {
+       if (document.body.style.backgroundColor == 'rgb(255, 255, 255)') {
 
-   function dark() {
-    if (document.body.style.backgroundColor == 'rgb(255, 255, 255)') {
+               document.body.style.backgroundColor = '#333';
+               document.getElementById("logo").style.filter = "invert(100%)";
+       }
+       else {
+               document.body.style.backgroundColor = 'rgb(255, 255, 255)';
+               document.getElementById("logo").style.filter = "invert(0%)";
 
-            document.body.style.backgroundColor = '#333';
-            document.getElementById("logo").style.filter = "invert(100%)";
-    }
-    else {
-            document.body.style.backgroundColor = 'rgb(255, 255, 255)';
-            document.getElementById("logo").style.filter = "invert(0%)";
+       }
+   }
+   </script>
 
-    }
-}
-</script>
-
-</head>
+   </head>
    <body style="background-color: rgb(255, 255, 255)">
       <!-- Wrapper -->
       <div id="wrapper">
          <!-- Main -->
          <div id="main">
-            <p>&ensp;</p>
-            <a href=index.html>
-            <img src = "https://i.imgur.com/RBrDeDY.png" class="center" id="logo"></a>
+               <p>&ensp;</p>
+               <a href=index.html>
+               <img src = "https://i.imgur.com/RBrDeDY.png" class="center" id="logo"></a>
             <div class="inner">
                <!-- Header -->
                <header id="header">
@@ -71,51 +65,54 @@
                      <input type="text" name="query" id="query" placeholder="Search" /></form>
                </header>
                <!-- Banner -->
-               <section id="banner" style="padding: 2em 0 0em 0 ;">
-                  <div class="content" style="width:40%;">
-                     <h2>InfoSci Academic Policies
-                     </h2>
 
-                     <p>Every student in the Bachelor of Science in Information Science (BSIS) program must follow the policies of the program and college. If you have questions about a policy, please contact your advisor.
-                     </p>
+               <section style="padding: 2em 0 0em 0 ;">
+               <h1><b>Dr. Strange</b></h1>
 
-                     <p><strong>Required Number of Credits:</strong><br />
-                        InfoSci students are required to take 45 credits within the major. 30 credits of which must be approved major coursework with the INST prefix. Students must take 15 credits of approved upper-level [300-400 level] electives.
-                     </p>
-
-                     <p><strong>Benchmark and Major courses:</strong><br />
-                        Students who have declared InfoSci as their major, must take benchmark and InfoSci core courses at UMD.
-                     </p>
-
-                     <p><strong>Benchmark Courses Taken Concurrently with Major Courses:</strong><br />
-                        InfoSci students must successfully (C- or higher) complete all benchmark courses before taking InfoSci coursework. The College will allow InfoSci students to start taking InfoSci core courses in their last semester of benchmark coursework.
-                     </p>
-
-                     <p><strong>Major Electives:</strong><br />
-                        In order to apply non-INST UMD courses towards the InfoSci major elective requirements , students must take courses that are approved by the InfoSci program after declaring InfoSci as their major. Students must obtain approval for non-INST courses before enrolling in them in order for them to be counted as major electives. Declared InfoSci students must complete all benchmark courses prior to enrolling in major electives.
-                     </p>
-
-                     <p><strong>Advanced Placement Credits:</strong><br />
-                        Advanced Placement (AP) credits that have been accepted and transferred to UMD successfully may be used to satisfy corresponding InfoSci benchmark i requirements. 
-                     </p>
-                     <p><strong> A complete guide to the University of Maryland's academic policies can be found <a href="http://registrar.umd.edu/current/Policies/acadregs.html" target="_blank">here</a>.<br />
-                     </strong></p>
-                     <p><strong><a href="https://ischool.umd.edu/sites/default/files/files/Prerequisite_List_2017_03_13.docx.pdf" target="_blank">Download prerequisite list from iScool Website</a>.<br /></strong></p>
+               <!-- Section -->   
+               <section id="banner" style="padding: 0em 0em 0em 0em ; width: auto; border: 0px solid black">
+                  <div  class="content" style="width:30%; padding: 0em 0em 0em 0em;">
+                     <div><img src = "https://st.depositphotos.com/1048902/1337/i/950/depositphotos_13371446-stock-photo-crazy-professor.jpg" id="logo" width ="300px">
+                     </div>
+                     <p>&ensp;</p>
+                     <ul class="icons" class="center">
+                     <li>&ensp;</li>
+                     <li>&ensp;</li>
+                     <li></li>
+                     <li></li>
+                     <li></li>
+                     <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                     <li><a href="#" class="icon fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+                     <li><a href="#" class="icon fa-instagram"><span class="label" >Instagram</span></a></li>
                   </div>
-                  <div>&ensp;</div>
                   <div class="content">
-                      <h2>Prerequisite PHP table goes here
-                     </h2>
-                     <p>tables here</p>      
+                     <h2>About Me</h2>
+                     <p style="text-indent :3em;">This course will be an exploration of the methods, tools, and processes for developing dynamic, database-driven user interfaces and websites, which will cover an end-to-end process to build a web application. This includes acquiring, installing, and running web servers, database servers, and web applications.</p>
+                  <h2>Useful Teacher Resources</h2>
+                   <!-- class links -->               
+                  <div align="center" style=" width:660px; border: 2px solid black"><h4>
+                  <a href="index.html" class="logo" align='center'>Education</a>&ensp;&ensp;
+                  <a href="index.html" class="logo" align='center'>Current Classes</a>&ensp;&ensp;
+                  <a href="index.html" class="logo" align='center'>Research/Job Opportunities</a>&ensp;&ensp;
+                  <a href="index.html" class="logo" align='center'>Contact</a>                    
+               </h4></div>
+               </section>
+               <header>
+                  <div class="content">
+                        <h2>Dr. Strange Reviews 
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        </h2>
+                        <p style="text-indent :3em;">Reviews table goes here</p>
+                        <h3>&nbsp;   </h3>
+                        <div>
+                        <a href="https://ischool.umd.edu/calendar"><h4 align="center">Write a Review</h4></a>
+                        </div>           
                   </div>
-                 
-               </section>
-
-               <!-- Section -->               
-               <section>
-              
-               </section>
-
+               </header>
             </div>
          </div>
          <!-- Sidebar -->
@@ -132,6 +129,7 @@
                   <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
                   &ensp;
                   <button onclick="dark()" style="width:auto;">Night Mode</button>
+
                   <div id="id01" class="modal">
                     
                     <form class="modal-content animate" action="/action_page.php">
@@ -169,8 +167,6 @@
                   }
                   </script>
                </section>
-
-               </section>
                <!-- Menu -->
                <nav id="menu">
                   <header class="major">
@@ -205,15 +201,14 @@
                      <li><a href="#">Amet Lacinia</a></li>
                   </ul>
                </nav>
-
                <!-- dark mode button -->
-               <!--
-               <section>
-                <button onclick="dark()">Switch color</button>
-               </section>
-               <!-- Section -->
-               <!--
-               <section>
+               <!-- <section>
+              	 <button onclick="dark()">Switch color</button>
+               </section> -->
+
+
+               	<!-- Section -->
+                <!-- <section>
                   <header class="major">
                      <h2>Get in touch</h2>
                   </header>

@@ -6,9 +6,117 @@
    -->
 <!-- jQuery library -->
 <html>
+<style>
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.user {
+    width: 90%;
+    max-width: 340px;
+    margin: 10vh auto;
+}
+
+.user__header {
+    text-align: center;
+    opacity: 0;
+    transform: translate3d(0, 500px, 0);
+    animation: arrive 500ms ease-in-out 0.7s forwards;
+}
+
+.user__title {
+    font-size: $font-size;
+    margin-bottom: -10px;
+    font-weight: 500;
+    color: white;
+}
+
+.form {
+    margin-top: 40px;
+    border-radius: 6px;
+    overflow: hidden;
+    opacity: 0;
+    transform: translate3d(0, 500px, 0);
+    animation: arrive 500ms ease-in-out 0.9s forwards;
+}
+
+.form--no {
+    animation: NO 1s ease-in-out;
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+.form__input {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    font-family: $font-family;
+    -webkit-appearance: none;
+    border: 0;
+    outline: 0;
+    transition: 0.3s;
+    
+    &:focus {
+        background: darken(#fff, 3%);
+    }
+}
+
+    
+    &:hover {
+        background: darken($color-primary, 5%);
+    }
+}
+
+@keyframes NO {
+  from, to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+@keyframes arrive {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 50px, 0);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes move {
+    0% {
+        background-position: 0 0
+    }
+
+    50% {
+        background-position: 100% 0
+    }
+
+    100% {
+        background-position: 0 0
+    }
+}
+</style>
 
 <head>
-<title>Info Sci Prerequisites</title>
+<title>Create an account</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -41,6 +149,12 @@
 
     }
 }
+    const button = document.querySelector('.btn')
+    const form   = document.querySelector('.form')
+
+    button.addEventListener('click', function() {
+       form.classList.add('form--no') 
+    });
 </script>
 
 </head>
@@ -72,43 +186,27 @@
                </header>
                <!-- Banner -->
                <section id="banner" style="padding: 2em 0 0em 0 ;">
-                  <div class="content" style="width:40%;">
-                     <h2>InfoSci Academic Policies
-                     </h2>
-
-                     <p>Every student in the Bachelor of Science in Information Science (BSIS) program must follow the policies of the program and college. If you have questions about a policy, please contact your advisor.
-                     </p>
-
-                     <p><strong>Required Number of Credits:</strong><br />
-                        InfoSci students are required to take 45 credits within the major. 30 credits of which must be approved major coursework with the INST prefix. Students must take 15 credits of approved upper-level [300-400 level] electives.
-                     </p>
-
-                     <p><strong>Benchmark and Major courses:</strong><br />
-                        Students who have declared InfoSci as their major, must take benchmark and InfoSci core courses at UMD.
-                     </p>
-
-                     <p><strong>Benchmark Courses Taken Concurrently with Major Courses:</strong><br />
-                        InfoSci students must successfully (C- or higher) complete all benchmark courses before taking InfoSci coursework. The College will allow InfoSci students to start taking InfoSci core courses in their last semester of benchmark coursework.
-                     </p>
-
-                     <p><strong>Major Electives:</strong><br />
-                        In order to apply non-INST UMD courses towards the InfoSci major elective requirements , students must take courses that are approved by the InfoSci program after declaring InfoSci as their major. Students must obtain approval for non-INST courses before enrolling in them in order for them to be counted as major electives. Declared InfoSci students must complete all benchmark courses prior to enrolling in major electives.
-                     </p>
-
-                     <p><strong>Advanced Placement Credits:</strong><br />
-                        Advanced Placement (AP) credits that have been accepted and transferred to UMD successfully may be used to satisfy corresponding InfoSci benchmark i requirements. 
-                     </p>
-                     <p><strong> A complete guide to the University of Maryland's academic policies can be found <a href="http://registrar.umd.edu/current/Policies/acadregs.html" target="_blank">here</a>.<br />
-                     </strong></p>
-                     <p><strong><a href="https://ischool.umd.edu/sites/default/files/files/Prerequisite_List_2017_03_13.docx.pdf" target="_blank">Download prerequisite list from iScool Website</a>.<br /></strong></p>
-                  </div>
-                  <div>&ensp;</div>
-                  <div class="content">
-                      <h2>Prerequisite PHP table goes here
-                     </h2>
-                     <p>tables here</p>      
-                  </div>
-                 
+                    <div style=" margin:0 auto;">
+                        <h1></h1>
+                        <h1 style="color:black;">Create an Account: </h1>
+                       <form class="form">
+                            <div class="form__group">
+                                <input type="text" placeholder="Username" class="form__input" />
+                            </div>
+                            
+                            <div class="form__group">
+                                <input type="email" placeholder="Email" class="form__input" />
+                            </div>
+                            
+                            <div class="form__group">
+                                <input type="password" placeholder="Password" class="form__input" />
+                            </div>
+                            <div class="form__group">
+                            <button class="btn" type="button"><h4>Register</h4></button>
+                            </div>
+                        </form>
+                    </div>
+                                     
                </section>
 
                <!-- Section -->               
@@ -241,3 +339,15 @@
       <script src="assets/js/main.js"></script>
    </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
