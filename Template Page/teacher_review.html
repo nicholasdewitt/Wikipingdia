@@ -1,58 +1,51 @@
 <!DOCTYPE HTML>
-<!--
-   Editorial by HTML5 UP
-   html5up.net | @ajlkn
-   Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-   -->
 <!-- jQuery library -->
 <html>
+   <head>
+   <title>Welcome to WikiPINGdia</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+   <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+   <link rel="stylesheet" href="assets/css/main.css" />
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <!--[if lte IE 9]>
+   <link rel="stylesheet" href="assets/css/ie9.css" />
+   <![endif]-->
+   <!--[if lte IE 8]>
+   <link rel="stylesheet" href="assets/css/ie8.css" />
+   <![endif]-->
 
-<head>
-<title>INST 377 Class Info</title>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-<link rel="stylesheet" href="assets/css/main.css" />
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<!--[if lte IE 9]>
-<link rel="stylesheet" href="assets/css/ie9.css" />
-<![endif]-->
-<!--[if lte IE 8]>
-<link rel="stylesheet" href="assets/css/ie8.css" />
-<![endif]-->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <!-- Latest compiled JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script>
+      $('.message a').click(function(){
+         $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+      });
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script>
-   $('.message a').click(function(){
-      $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
-   });
+      function dark() {
+       if (document.body.style.backgroundColor == 'rgb(255, 255, 255)') {
 
-   function dark() {
-    if (document.body.style.backgroundColor == 'rgb(255, 255, 255)') {
+               document.body.style.backgroundColor = '#333';
+               document.getElementById("logo").style.filter = "invert(100%)";
+       }
+       else {
+               document.body.style.backgroundColor = 'rgb(255, 255, 255)';
+               document.getElementById("logo").style.filter = "invert(0%)";
 
-            document.body.style.backgroundColor = '#333';
-            document.getElementById("logo").style.filter = "invert(100%)";
-    }
-    else {
-            document.body.style.backgroundColor = 'rgb(255, 255, 255)';
-            document.getElementById("logo").style.filter = "invert(0%)";
+       }
+   }
+   </script>
 
-    }
-}
-
-</script>
-
-</head>
+   </head>
    <body style="background-color: rgb(255, 255, 255)">
       <!-- Wrapper -->
       <div id="wrapper">
          <!-- Main -->
          <div id="main">
-            <p>&ensp;</p>
-            <a href=index.html>
-            <img src = "https://i.imgur.com/RBrDeDY.png" class="center" id="logo"></a>
+               <p>&ensp;</p>
+               <a href=index.html>
+               <img src = "https://i.imgur.com/RBrDeDY.png" class="center" id="logo"></a>
             <div class="inner">
                <!-- Header -->
                <header id="header">
@@ -72,11 +65,12 @@
                      <input type="text" name="query" id="query" placeholder="Search" /></form>
                </header>
                <!-- Banner -->
+
                <section style="padding: 2em 0 0em 0 ;">
-               <h2><b>INST 377: Dynamic Web Applications &ensp;&ensp;</b><a href="https://app.testudo.umd.edu/soc/search?courseId=INST377&sectionId=&termId=201808&_openSectionsOnly=on&creditCompare=&credits=&courseLevelFilter=ALL&instructor=&_facetoface=on&_blended=on&_online=on&courseStartCompare=&courseStartHour=&courseStartMin=&courseStartAM=&courseEndHour=&courseEndMin=&courseEndAM=&teachingCenter=ALL&_classDay1=on&_classDay2=on&_classDay3=on&_classDay4=on&_classDay5=on" style="font-size: 20px; border: 2px solid black" class="logo" align='center'>View Class in Testudo</a></h2>
+               <h1><b>Dr. Teacher Person</b></h1>
 
                <!-- Section -->   
-               <section id="banner" style="padding: 1em 0 0em 0 ;">
+               <section id="banner" style="padding: 0em 0 0em 0 ;">
                   <div class="content" style="width:40%;">
                      <h2>Class Description</h2>
                      <p style="text-indent :3em;">This course will be an exploration of the methods, tools, and processes for developing dynamic, database-driven user interfaces and websites, which will cover an end-to-end process to build a web application. This includes acquiring, installing, and running web servers, database servers, and web applications.</p>
@@ -84,7 +78,7 @@
                   </div>
                   <div>&ensp;</div>
                   <div class="content">
-                      <h2>Reviews 
+                        <h2>Dr. Strange Reviews 
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
@@ -95,7 +89,7 @@
                         <h3>&nbsp;   </h3>
                         <div>
                         <a href="https://ischool.umd.edu/calendar"><h4 align="center">Write a Review</h4></a>
-                        </div>                        
+                        </div>           
                   </div>
                </section>
 
@@ -126,6 +120,7 @@
                   <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
                   &ensp;
                   <button onclick="dark()" style="width:auto;">Night Mode</button>
+
                   <div id="id01" class="modal">
                     
                     <form class="modal-content animate" action="/action_page.php">
@@ -163,8 +158,6 @@
                   }
                   </script>
                </section>
-
-               </section>
                <!-- Menu -->
                <nav id="menu">
                   <header class="major">
@@ -199,15 +192,14 @@
                      <li><a href="#">Amet Lacinia</a></li>
                   </ul>
                </nav>
-
                <!-- dark mode button -->
-               <!--
-               <section>
-                <button onclick="dark()">Switch color</button>
-               </section>
-               <!-- Section -->
-               <!--
-               <section>
+               <!-- <section>
+              	 <button onclick="dark()">Switch color</button>
+               </section> -->
+
+
+               	<!-- Section -->
+                <!-- <section>
                   <header class="major">
                      <h2>Get in touch</h2>
                   </header>
