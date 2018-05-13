@@ -47,3 +47,5 @@ The about me section of a teacher's profile is a wiki-editable component can onl
 Teacher reviews are where students have the ability to review their teachers. If you have a verified student account with Wikipingdia you are allows to write comments and give star ratings on a teachers profile that will appear to other students. In order to write a review, simply log in with your student account, navigate to a teachers profile and click "Review this teacher" under their review section.
 
 #### *Additional teacher resources*
+
+The additional teacher resource sections is made up of the following subcategories - "Education", "Current Classes", "Research/career oppurtunities" and "Contact". The education and research/career oppurtunities sections allow professors to expand on their educational background and any oppurtunities they might want to advertise to their students. Contact allows them to offer additional methods for students to contac them. The current classes section draws dynamic data from our class database and lists all the classes that teacher is currently teaching as well as classes in the upcoming semester (provided information is available).
