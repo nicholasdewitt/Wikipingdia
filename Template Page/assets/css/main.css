@@ -3104,10 +3104,11 @@
 	}
 
 		.carousel {
-  width:640px;
-  height:360px;
+  width:100%;
+  height:100%;
   float:right;
-  border-right: 200px;
+  border-right: 100px;
+  border-left: 100px;
 }
 /* Full-width input fields */
 input[type=text], input[type=password] {
