@@ -1,5 +1,5 @@
 # **Wikipingdia**
 
-## A dynamic web wiki & application for information science students at UMD
+### A dynamic web wiki & application for information science students at UMD
 
-#### Bryan Bingham, Nick DeWitt, Nadine Perez, Paul Pietsch
+Created by Bryan Bingham, Nick DeWitt, Nadine Perez, Paul Pietsch
