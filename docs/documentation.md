@@ -1,4 +1,4 @@
-## Homepage
+## ***Homepage***
 
 #### *Trending Links*
 
@@ -20,7 +20,7 @@ While anyone can use Wikipingdia, only those with a verified UMD Canvas account 
 
 The section of the homepage that connects and displays the UMD Information Science department's Twitter feed.
 
-## Prerequisites
+## ***Prerequisites***
 
 #### *Exceptions & policies*
 
@@ -30,7 +30,7 @@ The exceptions and policies section of the prerequisite table lets students know
 
 The prerequisites table is a table populated by Wikipingdia and approved by the department that lets users look up benchmarks, course requirements, and other prerequisite for classes they want to take..
 
-## Class pages
+## ***Class pages***
 
 _Class pages are combination wiki/informational pages that make up a large portion of Wikipingdia. On class pages you can view crowd sourced descriptions, current teachers, reviews, and additional resources for a myriad of information science classes._
 
@@ -54,7 +54,7 @@ Another key part of our class pages are class reviews. While teacher reviews are
 
 Additional class resources include five sections - syllabi, textbooks, past exams, related classes, and class resources. The syllabi section houses professor-approved syllabi submitted by students, teachers, or TAs so prospective students can view past or current syllabi to inform decisions. The textbooks will list various versions of the textbooks or links for free access. Past exams will hold professor approved pdf versions of past exams for current students to use to study and prospective students to use for a more complete picture of the class. Class resources will have resources provided by teachers, TAs, and students for additional learning on the topic not provided in class.
 
-## Teacher profiles
+## ***Teacher profiles***
 
 _Teacher profiles are crucial to Wikipingdia. Not only can you receive in depth reviews about teachers and view all their current classes, but teachers can also use their pages to provide additional information to current and prospective students._
 
