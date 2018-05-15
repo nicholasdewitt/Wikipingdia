@@ -1,4 +1,4 @@
-## Homepage
+## ***Homepage***
 
 #### *Trending Links*
 
@@ -18,25 +18,45 @@ While anyone can use Wikipingdia, only those with a verified UMD Canvas account 
 
 #### *Twitter*
 
-## Prerequisites
+The section of the homepage that connects and displays the UMD Information Science department's Twitter feed.
+
+## ***Prerequisites***
 
 #### *Exceptions & policies*
 
+The exceptions and policies section of the prerequisite table lets students know different policies when it comes to prerequisites and how to get in contact with the department.
+
 #### *Prerequisite table*
 
-## Class pages
+The prerequisites table is a table populated by Wikipingdia and approved by the department that lets users look up benchmarks, course requirements, and other prerequisite for classes they want to take..
+
+## ***Class pages***
+
+_Class pages are combination wiki/informational pages that make up a large portion of Wikipingdia. On class pages you can view crowd sourced descriptions, current teachers, reviews, and additional resources for a myriad of information science classes._
 
 #### *Class description*
 
+The class description is a wiki created description (by Wikipingdia student users) that provide an in depth description into the class content, its difficulty, its connection to the information science major and what tools it provided that could help you in professional context. To edit a class description, navigate to the class page you wish to edit and in the class description section, click "Edit". You may also make any class description full-screen by click the arrows next to the "Class description" label.  
+
 #### *Prerequisites*
+
+The prerequisites section of class pages list pre and corequisites that are required for the class obtained from the Wikipingdia class database. You can click on the prerequisite to view that class's Wikipingdia page.
 
 #### *Teachers*
 
+This section retrieves the teachers who have taugh the class retrieved from the Wikipingdia class database. You can click on the teacher's name to view that teacher's Wikipingdia profile (provided they have one).
+
 #### *Popular class reviews*
 
-#### *Additional class resources*
+Another key part of our class pages are class reviews. While teacher reviews are about the quality of the teachers - class reviews give students a chance to review the actual content of the class. This might prove especially useful for electives and will allow students to pick classes that are tailored to their specific interests and career goals. In order to view class reviews simply navigate to the "Popular class reviews" section of the class you'd like to see reviews for. This truncated view will show you the "most helpful" reviews, however to see all reviews written about this class simply click the expand button next to the "Popular class reviews" label. In order to write your own class review, simply log in with your verified student account and click the "Write a review" button on the class page you'd like to review.
 
-## Teacher profiles
+#### *Additional class resources* [in progress]
+
+Additional class resources include five sections - syllabi, textbooks, past exams, related classes, and class resources. The syllabi section houses professor-approved syllabi submitted by students, teachers, or TAs so prospective students can view past or current syllabi to inform decisions. The textbooks will list various versions of the textbooks or links for free access. Past exams will hold professor approved pdf versions of past exams for current students to use to study and prospective students to use for a more complete picture of the class. Class resources will have resources provided by teachers, TAs, and students for additional learning on the topic not provided in class.
+
+## ***Teacher profiles***
+
+_Teacher profiles are crucial to Wikipingdia. Not only can you receive in depth reviews about teachers and view all their current classes, but teachers can also use their pages to provide additional information to current and prospective students._
 
 #### *About me*
 
