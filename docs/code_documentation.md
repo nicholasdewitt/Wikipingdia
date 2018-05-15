@@ -20,7 +20,7 @@ Our site is built with (in addition to HTML/CSS obviously) a combination of Java
 
 Our homepage news carousel was built with the Bootstrap carousel class using href="" links to direct the user to the relevant news article associated with each piture. The Twitter widget is a Twitter-timeline class designed to incorporate the Twitter API into HTML and our "Nightmode" function is a Javascript toggle function we built over a Bootstrap button.
 
-### Class, Teacher, and prerequisite Pages
+### Class, Teacher, and Prerequisite Pages
 
 The class pages, prerequisite page, and teacher pages are all completely dynamic and populated with relevant data from a sql database we built using PHP so the teacher and class pages can be populated for every class or teacher object we want to create as long as the information is in our database. Our login and review functions contain forms that save the relevant user input (account info and class/teacher reviews) to our sql database.
 
