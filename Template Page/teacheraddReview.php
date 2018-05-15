@@ -32,26 +32,15 @@
 
 				
 
-				<!-- div class="form-group">
+				   <!--  <div class="form-group">
 					<label for="teachername" class="control-label col-sm-3">Select A Teacher</label>
 					<div class="col-sm-5">
 						<?=dropdown('teachername', $teacher, $row['teachername'])?>
-						<datalist id="teachers">
+						<select name ="teachername">
   						<option value="<?=$row['teachername']?>">
-						</datalist>
+						</select>
 					</div>
 				</div> -->
-
-				<!-- <select name = "teacher" id = "teacher" class = "form-control" required="required">
-					<option value ="" selected="selected">Please make a choice</option>
-					<?php foreach ($teacher as $r): ?>
-						<?php if($r['teacher_ID'] == $row['teachername']):?>
-							<option value ="<?=$r['teacher_ID']?>" selected = "selected"><?=$r['teachername']?></option>
-						<?php else: ?>
-							<option value ="?=$r['teacher_ID']?>"><?=$r['teachername']?></option>
-						<?php endif ?>
-					<?php endforeach ?>
-				</select> -->
 
 				<select name="teacher" id=“teacher" class="form-control" required="required">
 					<option value="" selected="selected">Please make a choice</option>
@@ -63,6 +52,7 @@
 						<?php endif ?>
 					<?php endforeach ?>
 				</select>
+
 				<div class="form-group">
 					<label for="num_stars" class="control-label col-sm-3">Number of stars  </label>
 					<div class="col-sm-5">
