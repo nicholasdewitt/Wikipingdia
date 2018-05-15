@@ -1,0 +1,353 @@
+<!DOCTYPE HTML>
+<!--
+   Editorial by HTML5 UP
+   html5up.net | @ajlkn
+   Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+   -->
+<!-- jQuery library -->
+<html>
+<style>
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.user {
+    width: 90%;
+    max-width: 340px;
+    margin: 10vh auto;
+}
+
+.user__header {
+    text-align: center;
+    opacity: 0;
+    transform: translate3d(0, 500px, 0);
+    animation: arrive 500ms ease-in-out 0.7s forwards;
+}
+
+.user__title {
+    font-size: $font-size;
+    margin-bottom: -10px;
+    font-weight: 500;
+    color: white;
+}
+
+.form {
+    margin-top: 40px;
+    border-radius: 6px;
+    overflow: hidden;
+    opacity: 0;
+    transform: translate3d(0, 500px, 0);
+    animation: arrive 500ms ease-in-out 0.9s forwards;
+}
+
+.form--no {
+    animation: NO 1s ease-in-out;
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+.form__input {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    font-family: $font-family;
+    -webkit-appearance: none;
+    border: 0;
+    outline: 0;
+    transition: 0.3s;
+    
+    &:focus {
+        background: darken(#fff, 3%);
+    }
+}
+
+    
+    &:hover {
+        background: darken($color-primary, 5%);
+    }
+}
+
+@keyframes NO {
+  from, to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+@keyframes arrive {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 50px, 0);
+    }
+    
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes move {
+    0% {
+        background-position: 0 0
+    }
+
+    50% {
+        background-position: 100% 0
+    }
+
+    100% {
+        background-position: 0 0
+    }
+}
+</style>
+
+<head>
+<title>Create an account</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+<link rel="stylesheet" href="assets/css/main.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!--[if lte IE 9]>
+<link rel="stylesheet" href="assets/css/ie9.css" />
+<![endif]-->
+<!--[if lte IE 8]>
+<link rel="stylesheet" href="assets/css/ie8.css" />
+<![endif]-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+   $('.message a').click(function(){
+      $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+   });
+
+   function dark() {
+    if (document.body.style.backgroundColor == 'rgb(255, 255, 255)') {
+
+            document.body.style.backgroundColor = '#333';
+            document.getElementById("logo").style.filter = "invert(100%)";
+    }
+    else {
+            document.body.style.backgroundColor = 'rgb(255, 255, 255)';
+            document.getElementById("logo").style.filter = "invert(0%)";
+
+    }
+}
+    const button = document.querySelector('.btn')
+    const form   = document.querySelector('.form')
+
+    button.addEventListener('click', function() {
+       form.classList.add('form--no') 
+    });
+</script>
+
+</head>
+   <body style="background-color: rgb(255, 255, 255)">
+      <!-- Wrapper -->
+      <div id="wrapper">
+         <!-- Main -->
+         <div id="main">
+            <p>&ensp;</p>
+            <a href=index.html>
+            <img src = "https://i.imgur.com/RBrDeDY.png" class="center" id="logo"></a>
+            <div class="inner">
+               <!-- Header -->
+               <header id="header">
+                  <a href="index.html" class="logo" align='center'>Class Information</a>
+                  <a href="index.html" class="logo" align='center'>About InfoSci</a>
+                  <a href="index.html" class="logo" align='center'>Career Opportunities</a>
+                  <a href="index.html" class="logo" align='center'>Social Media</a>
+                  <a href="index.html" class="logo" align='center'>My Account</a>
+                  <a href="index.html" class="logo" align='center'>Help/FAQ</a>
+                     <ul class="icons" align='center'>
+                     <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                     <li><a href="#" class="icon fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+                     <li><a href="#" class="icon fa-instagram"><span class="label" >Instagram</span></a></li>
+                  </ul>
+                  &ensp;&ensp;
+                     <form method="post" action="#">
+                     <input type="text" name="query" id="query" placeholder="Search" /></form>
+               </header>
+               <!-- Banner -->
+               <section id="banner" style="padding: 2em 0 0em 0 ;">
+                    <div style=" margin:0 auto;">
+                        <h1></h1>
+                        <h1 style="color:black;">Create an Account: </h1>
+                       <form class="form">
+                            <div class="form__group">
+                                <input type="text" placeholder="Username" class="form__input" />
+                            </div>
+                            
+                            <div class="form__group">
+                                <input type="email" placeholder="Email" class="form__input" />
+                            </div>
+                            
+                            <div class="form__group">
+                                <input type="password" placeholder="Password" class="form__input" />
+                            </div>
+                            <div class="form__group">
+                            <button class="btn" type="button"><h4>Register</h4></button>
+                            </div>
+                        </form>
+                    </div>
+                                     
+               </section>
+
+               <!-- Section -->               
+               <section>
+              
+               </section>
+
+            </div>
+         </div>
+         <!-- Sidebar -->
+         <div id="sidebar">
+            <div class="inner">
+               <!-- logo -->
+               <section>
+                  <img src = "ischool_logo.png" width="260">
+               </section>
+
+               <!-- Login -->
+               <section>
+                  &ensp;&ensp;
+                  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+                  &ensp;
+                  <button onclick="dark()" style="width:auto;">Night Mode</button>
+                  <div id="id01" class="modal">
+                    
+                    <form class="modal-content animate" action="/action_page.php">
+                      <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <img src="https://kooledge.com/assets/default_medium_avatar-57d58da4fc778fbd688dcbc4cbc47e14ac79839a9801187e42a796cbd6569847.png" alt="Avatar" class="avatar" >
+                      </div>
+
+                      <div class="container" style="width:50%;>
+                        <label for="uname"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                          
+                        <button type="submit">Login</button>
+                      </div>
+
+                      <div class="container" style="background-color:#f1f1f1 width:50%;">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                        <a href="login.html">No Account? Create an Account</a></span>
+                      </div>
+                    </form>
+                  </div>
+
+                  <script>
+                  // Get the modal
+                  var modal = document.getElementById('id01');
+
+                  // When the user clicks anywhere outside of the modal, close it
+                  window.onclick = function(event) {
+                      if (event.target == modal) {
+                          modal.style.display = "none";
+                      }
+                  }
+                  </script>
+               </section>
+
+               </section>
+               <!-- Menu -->
+               <nav id="menu">
+                  <header class="major">
+                     <h2>Trending Links</h2>
+                  </header>
+                  <ul>
+                     <li><a href="index.html">Homepage</a></li>
+                     <li><a href="generic.html">Generic</a></li>
+                     <li><a href="elements.html">Elements</a></li>
+                     <li>
+                        <span class="opener">Submenu</span>
+                        <ul>
+                           <li><a href="#">Lorem Dolor</a></li>
+                           <li><a href="#">Ipsum Adipiscing</a></li>
+                           <li><a href="#">Tempus Magna</a></li>
+                           <li><a href="#">Feugiat Veroeros</a></li>
+                        </ul>
+                     </li>
+                     <li><a href="#">Etiam Dolore</a></li>
+                     <li><a href="#">Adipiscing</a></li>
+                     <li>
+                        <span class="opener">Another Submenu</span>
+                        <ul>
+                           <li><a href="#">Lorem Dolor</a></li>
+                           <li><a href="#">Ipsum Adipiscing</a></li>
+                           <li><a href="#">Tempus Magna</a></li>
+                           <li><a href="#">Feugiat Veroeros</a></li>
+                        </ul>
+                     </li>
+                     <li><a href="#">Maximus Erat</a></li>
+                     <li><a href="#">Sapien Mauris</a></li>
+                     <li><a href="#">Amet Lacinia</a></li>
+                  </ul>
+               </nav>
+
+               <!-- dark mode button -->
+               <!--
+               <section>
+                <button onclick="dark()">Switch color</button>
+               </section>
+               <!-- Section -->
+               <!--
+               <section>
+                  <header class="major">
+                     <h2>Get in touch</h2>
+                  </header>
+                  <p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                  <ul class="contact">
+                     <li class="fa-envelope-o"><a href="#">information@untitled.tld</a></li>
+                     <li class="fa-phone">(000) 000-0000</li>
+                     <li class="fa-home">1234 Somewhere Road #8254<br />
+                        Nashville, TN 00000-0000
+                     </li>
+                  </ul>
+               </section> -->
+               <!-- Footer -->
+               <footer id="footer">
+                  <p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+               </footer>
+            </div>
+         </div>
+      </div>
+      <!-- Scripts -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/skel.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
