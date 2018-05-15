@@ -1,5 +1,5 @@
 <?php
-$teacherquery = "SELECT CONCAT(teacher_fname, ' ', teacher_lname) AS teachername, teacher_email FROM teacher order by teacher_ID";
+$teacherquery = "SELECT teacher_ID, CONCAT(teacher_fname, ' ', teacher_lname) AS teachername, teacher_email FROM teacher order by teacher_ID";
 $conn = new mysqli('localhost', 'root', '', 'wikipingdia');
 if ($conn->connect_error) die("Connection error: " . mysqli_connect_error());
 $teachertable = $conn->query($teacherquery);
@@ -80,8 +80,8 @@ $teachertable = $conn->query($teacherquery);
                         <thead><tr><th>Teacher Name</th><th>Teacher Email</th></tr></thead>
                         <tbody>
                         <?php foreach ($teachertable as $r): ?>
-                           <!-- <?php $link = "teacher_review.php?tid=" . $r['teacher_ID'].""?> -->
-                        <tr><td><a href=$link><?=$r['teachername']?></a></td><td><?=$r['teacher_email']?></td><td class="text-left"></td></tr>
+                          <?php $teacherlink = 'teacher_review.php?tid=' . $r['teacher_ID']?>
+                        <tr><td><a href="<?=$teacherlink?>"><?=$r['teachername']?></a></td><td><?=$r['teacher_email']?></td><td class="text-right"></td></tr>
                         <?php endforeach ?>
                         </tbody>
                         </table>    

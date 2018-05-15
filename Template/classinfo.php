@@ -190,9 +190,10 @@ $testudolink = "https://app.testudo.umd.edu/soc/search?courseId=".$row['course_c
                       <button class="dropbtn">Teachers</button>
                       <div class="dropdown-content">
                         <!-- currently only works for the first listing. Will fix later -->
-                        <?php $teacherlink = "teacher_review.php?tid=" . $wtr['teacher_ID']?>
+                        
                         <?php foreach ($whotaught as $r): ?>
-                          <a href=<?=$teacherlink?>><?=$r['teacher_fname'].' '.$r['teacher_lname']?></a>
+                        	<?php $teacherlink = "teacher_review.php?tid=" . $r['teacher_ID']?>
+                          <a href="<?=$teacherlink?>"><?=$r['teacher_fname'].' '.$r['teacher_lname']?></a>
                         <?php endforeach ?>
                       </div>
                     </div>&ensp;&ensp;
@@ -201,13 +202,13 @@ $testudolink = "https://app.testudo.umd.edu/soc/search?courseId=".$row['course_c
                 <div class="dropdown">
                   <button class="dropbtn">Prerequisites</button>
                   <div class="dropdown-content">
-                     <?php $classlink = 'classinfo.php?cid=' . $prerow['pre_course_code']?>
+                     
                   <?php foreach ($prereq as $r): ?>
-                          <a href=<?=$classlink?>><?=$r['pre_course_code']?></a>
+                  	<?php $classlink = 'classinfo.php?cid=' . $r['pre_course_code']?>
+                          <a href="<?=$classlink?>"><?=$r['pre_course_code']?></a>
                         <?php endforeach ?>
                   </div>
                 </div>
-               </h4></div>
                </h4></div>
                </header>
 

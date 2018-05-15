@@ -111,8 +111,9 @@ $courserow = $coursetable->fetch_assoc();
                         <thead><tr><th>Course Code</th><th>Course Name</th></tr></thead>
                         <tbody>
                         <?php foreach ($coursetable as $r): ?>
-                           <?php $link = "classinfo.php?cid=\\'" . $r['course_code']."\\'"?>
-                        <tr><td><a href="#"><?=$r['course_code']?></a></td><td><?=$r['course_name']?></td><td class="text-right"></td></tr>
+                           <?php $classlink = 'classinfo.php?cid=' . $r['course_code']?>
+                          
+                        <tr><td><a href="<?=$classlink?>"><?=$r['course_code']?></a></td><td><?=$r['course_name']?></td><td class="text-right"></td></tr>
                         <?php endforeach ?>
                         </tbody>
                         </table>    

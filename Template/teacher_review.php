@@ -149,7 +149,8 @@ $row = $result->fetch_assoc();
                       <button class="dropbtn">Classes Taught</button>
                       <div class="dropdown-content">
                       	<?php foreach ($class as $r): ?>
-                      	  <a href="#"><?=$r['course_code']?></a>
+                          <?php $classlink = 'classinfo.php?cid=' . $r['course_code']?>
+                          <a href="<?=$classlink?>"><?=$r['course_code']?></a>
                       	<?php endforeach ?>
                       </div>
                     </div>&ensp;&ensp;
