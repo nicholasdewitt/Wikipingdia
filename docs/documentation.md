@@ -44,7 +44,7 @@ The prerequisites section of class pages list pre and corequisites that are requ
 
 #### *Teachers*
 
-This section retrieves the teachers teaching the class in the current semester retrieved from the Wikipingdia class database. You can click on the teacher's name to view that teacher's Wikipingdia profile (provided they have one).
+This section retrieves the teachers who have taugh the class retrieved from the Wikipingdia class database. You can click on the teacher's name to view that teacher's Wikipingdia profile (provided they have one).
 
 #### *Popular class reviews*
 
