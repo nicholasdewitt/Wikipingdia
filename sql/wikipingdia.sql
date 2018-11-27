@@ -1,6 +1,6 @@
 CREATE DATABASE  IF NOT EXISTS `wikipingdia` /*!40100 DEFAULT CHARACTER SET latin1 */;
 USE `wikipingdia`;
--- MySQL dump 10.13  Distrib 5.7.22, for Linux (x86_64)
+-- MySQL dump 10.13  Distrib 5.7.24, for Linux (x86_64)
 --
 -- Host: localhost    Database: wikipingdia
 -- ------------------------------------------------------
@@ -129,7 +129,7 @@ CREATE TABLE `review_class` (
   `num_stars` int(11) NOT NULL,
   `review_text` varchar(255) NOT NULL,
   PRIMARY KEY (`review_ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -138,6 +138,7 @@ CREATE TABLE `review_class` (
 
 LOCK TABLES `review_class` WRITE;
 /*!40000 ALTER TABLE `review_class` DISABLE KEYS */;
+INSERT INTO `review_class` VALUES (1,'INST414',1,'this class is really really hard'),(2,'INST126',2,'only 2 people liked it'),(3,'INST490',3,'It was only a little fun');
 /*!40000 ALTER TABLE `review_class` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -154,7 +155,7 @@ CREATE TABLE `review_teacher` (
   `num_stars` int(11) NOT NULL,
   `review_text` varchar(255) NOT NULL,
   PRIMARY KEY (`review_ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -163,7 +164,7 @@ CREATE TABLE `review_teacher` (
 
 LOCK TABLES `review_teacher` WRITE;
 /*!40000 ALTER TABLE `review_teacher` DISABLE KEYS */;
-INSERT INTO `review_teacher` VALUES (14,8,5,'This is rad!'),(15,40,5,'Top Notch!'),(16,1,1,'This guy sucks'),(17,40,5,'10/10 would take any class with her again');
+INSERT INTO `review_teacher` VALUES (14,8,5,'This is rad!'),(15,40,5,'Top Notch!'),(16,1,1,'This guy sucks'),(17,40,5,'10/10 would take any class with her again'),(18,40,-3,'the bees knees'),(19,3,5,'awesome!');
 /*!40000 ALTER TABLE `review_teacher` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -188,7 +189,7 @@ CREATE TABLE `section` (
 
 LOCK TABLES `section` WRITE;
 /*!40000 ALTER TABLE `section` DISABLE KEYS */;
-INSERT INTO `section` VALUES (1,'INST126',1),(2,'INST126',12),(3,'INST201',2),(4,'INST201',3),(5,'INST201',30),(6,'INST201',31),(7,'INST201',32),(8,'INST311',3),(9,'INST314',4),(10,'INST314',10),(11,'INST314',13),(12,'INST314',26),(13,'INST314',27),(14,'INST314',45),(15,'INST326',1),(16,'INST326',11),(17,'INST326',14),(18,'INST326',15),(19,'INST326',33),(20,'INST326',28),(21,'INST326',34),(22,'INST326',35),(23,'INST326',36),(24,'INST327',5),(25,'INST327',16),(26,'INST327',17),(27,'INST335',6),(28,'INST335',18),(29,'INST335',29),(30,'INST346',19),(31,'INST346',11),(32,'INST346',37),(33,'INST352',7),(34,'INST352',20),(35,'INST352',38),(36,'INST354',21),(37,'INST362',8),(38,'INST362',22),(39,'INST362',23),(40,'INST362',39),(41,'INST408B',9),(42,'INST408C',41),(43,'INST377',24),(44,'INST377',40),(45,'INST414',42),(46,'INST447',16),(47,'INST447',45),(48,'INST448',46),(49,'INST462',25),(50,'INST462',43),(51,'INST466',2),(52,'INST490',44),(53,'INST490',3),(54,'INST490',5),(55,'INST201',47),(56,'INST490',47);
+INSERT INTO `section` VALUES (1,'INST126',1),(2,'INST126',12),(3,'INST201',2),(5,'INST201',30),(6,'INST201',31),(7,'INST201',32),(8,'INST311',3),(9,'INST314',4),(10,'INST314',10),(11,'INST314',13),(12,'INST314',26),(13,'INST314',27),(14,'INST314',45),(15,'INST326',1),(16,'INST326',11),(17,'INST326',14),(18,'INST326',15),(19,'INST326',33),(20,'INST326',28),(21,'INST326',34),(22,'INST326',35),(23,'INST326',36),(24,'INST327',5),(25,'INST327',16),(26,'INST327',17),(27,'INST335',6),(28,'INST335',18),(29,'INST335',29),(30,'INST346',19),(31,'INST346',11),(32,'INST346',37),(33,'INST352',7),(34,'INST352',20),(35,'INST352',38),(36,'INST354',21),(37,'INST362',8),(38,'INST362',22),(39,'INST362',23),(40,'INST362',39),(41,'INST408B',9),(42,'INST408C',41),(43,'INST377',24),(44,'INST377',40),(45,'INST414',42),(46,'INST447',16),(47,'INST447',45),(48,'INST448',46),(49,'INST462',25),(50,'INST462',43),(51,'INST466',2),(52,'INST490',44),(54,'INST490',5),(55,'INST201',47),(56,'INST490',47);
 /*!40000 ALTER TABLE `section` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -252,4 +253,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-05-15  7:07:58
+-- Dump completed on 2018-11-26 21:55:36
